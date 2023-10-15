@@ -113,7 +113,7 @@ func main() {
 		return
 	}
 	// Выводит результат
-	if strings.Contains(input, "I") || strings.Contains(input, "V") || strings.Contains(input, "X") {
+	if strings.ContainsAny(input, "IVXLC") {
 		romeResult := convertToRome(result)
 		fmt.Println(romeResult)
 	} else {
