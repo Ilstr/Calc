@@ -108,7 +108,7 @@ func main() {
 		result = a / b
 	}
 	// Проверка на отрицательные числа в римской системе счисления
-	if (strings.Contains(input, "I") || strings.Contains(input, "V") || strings.Contains(input, "X")) && result <= 0 {
+	if strings.ContainsAny(input, "IVXLC") && result <= 0 {
 		fmt.Println("Ошибка: в римской системе счисления нет отрицательных чисел и нуля.")
 		return
 	}
