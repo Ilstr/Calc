@@ -47,7 +47,7 @@ func convertToRome(arabic int) string {
 
 // Начало
 func main() {
-	//Ввод, чтение строки
+	// Ввод, чтение строки
 	reader := bufio.NewReader(os.Stdin)
 	input, _ := reader.ReadString('\n')
 	input = strings.TrimSpace(input)
